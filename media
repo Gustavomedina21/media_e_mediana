@@ -14,7 +14,7 @@ def calcular_mediana(lista):
         mediana = lista_ordenada[meio]
     return mediana
 
-# Testando as funções
+
 numeros = [12, 3, 8, 4, 10, 15, 6]
 media = calcular_media(numeros)
 mediana = calcular_mediana(numeros)
