@@ -1,0 +1,24 @@
+def calcular_media(lista):
+    soma = sum(lista)
+    media = soma / len(lista)
+    return media
+
+def calcular_mediana(lista):
+    lista_ordenada = sorted(lista)
+    tamanho = len(lista_ordenada)
+    if tamanho % 2 == 0:
+        meio = tamanho // 2
+        mediana = (lista_ordenada[meio - 1] + lista_ordenada[meio]) / 2
+    else:
+        meio = tamanho // 2
+        mediana = lista_ordenada[meio]
+    return mediana
+
+# Testando as funções
+numeros = [12, 3, 8, 4, 10, 15, 6]
+media = calcular_media(numeros)
+mediana = calcular_mediana(numeros)
+
+print(f"Números: {numeros}")
+print(f"Média: {media}")
+print(f"Mediana: {mediana}")
